@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background: linear-gradient(140deg,rgb(196, 251, 188)10%, rgb(205, 214, 104)90%);
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+.menu{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.menu h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.box-form{
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.header{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+.header h3{
+    text-align: center;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+form{
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    background: linear-gradient(140deg,rgb(196, 251, 188)10%, rgb(205, 214, 104)90%);
+    border: 1px solid #807d7d;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form-control i{
+    position: absolute;
+    top: 44px;
+    right: 5px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    bottom: -30;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.success input{
+    border-color: rgb(13, 255, 21);
+    box-shadow: 0px 1px 1px rgb(13, 255, 21);
+}
+.form-control.success i.fa-circle-check{
+    color: yellowgreen;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: rgb(239, 32, 5);
+    box-shadow: 0px 1px 1px rgb(239, 32, 5);
+}
+.form-control.error i.fa-circle-exclamation{
+    color: rgb(239, 32, 5);
+    visibility: visible;
+}
+.form-control.error small{
+    color: rgb(239, 32, 5);
+    visibility: visible;
+}

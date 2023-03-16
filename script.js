@@ -41,6 +41,20 @@ function checkInputs(){
     }else{
         setSuccess(passwordConf);
     }
+
+    const formControls = form.querySelectorAll(".form-control");
+    const formValid = [...formControls].every(formControl =>{
+        return formControl.className === "form-control success";
+    });
+    if(formValid){
+        username.value = '';
+        email.value = '';
+        password.value = '';
+        passwordConf.value = '';
+        document.querySelector('.check-valid').style.display = 'block';
+    }else{
+        console.log('Formulario incompleto');
+    }
 }
 function setError(input, message){
     const formControl = input.parentElement;

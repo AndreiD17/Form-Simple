@@ -52,6 +52,7 @@ function checkInputs(){
         password.value = '';
         passwordConf.value = '';
         document.querySelector('.check-valid').style.display = 'block';
+
     }else{
         console.log('Formulario incompleto');
     }
